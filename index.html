@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link rel="stylesheet" href="./output/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body class="bg-gray-600" >
+
+    <header>
+      <div class=" w-full text-center">
+        <h1 class="text-5xl md:text-8xl font-semibold text-cyan-300">Todo List</h1>
+        <i class="text-2xl block mt-5 uppercase font-semibold underline underline-offset-4 text-white mb-6">jeckshon <span class="text-cyan-300">shorf</span></i>
+      </div>
+  
+    </header>
+    <main class="px-5 " >
+      <div class="max-w-[1500px] min-h-[300px] bg-green-300 mx-auto px-4 " >
+        <div class="max-w-[900px] mx-auto">
+          
+       
+        <div id="spanMain" class="flex items-center justify-center space-x-3 text-xl">
+          <h1 class="h1Style">Total:<span  class="ml-2 " id="total">0</span></h1>
+          <h1 class="h1Style">Complete:<span class="ml-2 " id="complete">0</span></h1>
+          <h1 class="h1Style">panding:<span  class="ml-2 "  id="panding">0</span></h1>
+        </div>
+        
+        <div class="text-center">
+          <input type="text" id="inputText" class="px-6 border-0 rounded-md py-1 md:py-2 w-1/2 shadow-md outline-none font-bold" >
+          <button type="button" id="add" class="inputBtn">Add</button>
+          <button id="update" style="opacity: 0;" class="inputBtn">Update</button>
+          
+          
+        </div>
+    
+        <table id="mainTable" class=" w-full border mt-8">
+          <tr class="text-center">
+            <th class="border-r-2 border-b-2">Num</th>
+            <th class="border-r-2 border-b-2" >Task</th>
+            <th class="border-r-2 border-b-2">Date</th>
+            <th class="border-r-2 border-b-2">Delate</th>
+            <th class="border-r-2 border-b-2">Edit</th>
+            <th class="border-r-2 border-b-2">status</th>
+          </tr>
+   
+            <tr class="modifyTr trStyle">
+              <td id="num" >0</td>
+              <td id="task">sdfsd</td>
+              <td id="date">3/8</td>
+              <td>
+                <button class="btn"><span class="material-symbols-outlined">delete</span></button>
+              </td>
+              <td>
+                <button class="edit"><span class="material-symbols-outlined">edit</span></button>
+              </td>
+              <td>
+                <input type="checkbox" name="checkbox" value="false">
+              </td>
+              </tr>
+       
+        </table>
+      </div>
+      </div>
+     
+    </main>
+    
+
+    <script src="index.js"></script>
+  </body>
+</html>

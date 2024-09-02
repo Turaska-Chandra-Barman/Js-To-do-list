@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .h1Style{
+       @apply border p-1 rounded bg-white shadow-xl text-xs sm:text-2xl mt-5 mb-5
+    }
+    .trStyle{
+        @apply text-center font-semibold border-b-2
+    }
+    .inputBtn{
+        @apply text-xl md:text-2xl uppercase border px-4 py-0 md:py-1 rounded-full bg-white font-bold
+    }
+} 
