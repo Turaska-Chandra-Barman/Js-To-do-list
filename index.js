@@ -91,7 +91,7 @@ add.addEventListener('click', () => {
   let total;
     for(let i = 0; i < numAdd.length; i++){
       numAdd[i].innerHTML = [i];
-       total = [i]
+    total = [i]
     }
    
     if(total === undefined){
@@ -121,7 +121,7 @@ add.addEventListener('click', () => {
         
         for(let i = 0; i < numCalculate.length; i++){
          numCalculate[i].innerHTML = [i];
-          total = [i];
+        let total = [i];
          spanAll[0].innerHTML = total;
          spanAll[2].innerHTML = total;
         }
